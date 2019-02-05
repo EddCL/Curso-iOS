@@ -20,12 +20,23 @@ class ViewController: UIViewController {
     }
 
     @IBAction func buttonPressed(_ sender: UIButton) {
-        self.labelTitle.text = "Pulsé el boton :B"
-        // label.textColor, para cambiar el color del texto
-        // .font, cambiar la fuente -> UIFont...
-        self.imageViewDiamond.image = UIImage(named: "diamante")
-        //self.buttonPush = "Pulsa otra vez"
+        let controller = UIAlertController(title: "I am rich", message: "I am RICH,\nI deserve it,\nI am good,\n healthy and successful", preferredStyle: .alert) //o usar triple comilla """ """
+        let action = UIAlertAction(title: "Aceptar", style: .default) { (action) in
+            print("Pulsé el botón de Aceptar")
+        }
+        controller.addAction(action)
         
+        let action2 = UIAlertAction(title: "Borrar", style: .destructive, handler: { (action) in
+            print("Pulsé el boton de Borrar")
+        })
+        controller.addAction(action2)
+        
+        let action3 = UIAlertAction(title: "Cancelar", style: .cancel) { _ in
+            print("Pulsé el botón de Cancelar")
+        }
+        controller.addAction(action3)
+        
+        self.show(controller, sender: nil)
     }
     
 }
