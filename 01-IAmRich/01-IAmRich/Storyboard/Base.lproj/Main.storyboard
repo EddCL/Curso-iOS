@@ -19,47 +19,48 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ruby" translatesAutoresizingMaskIntoConstraints="NO" id="oOm-Ca-dOo">
-                                <rect key="frame" x="87" y="384" width="240" height="128"/>
+                                <rect key="frame" x="107" y="348" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="8jk-8e-LSZ"/>
+                                    <constraint firstAttribute="height" constant="200" id="whQ-CH-oSv"/>
+                                </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q9D-Ot-JZq">
+                                <rect key="frame" x="120.5" y="578" width="173" height="47"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="30"/>
+                                <state key="normal" title="Push me! 😏">
+                                    <color key="titleColor" red="0.57526975869999997" green="0.059370286760000002" blue="0.090228937570000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9Bp-LV-T6i"/>
+                                </connections>
+                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.90000000000000002" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I am RICH!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pDw-pz-17g">
-                                <rect key="frame" x="100.5" y="297" width="213" height="47"/>
+                                <rect key="frame" x="100.5" y="271" width="213" height="47"/>
                                 <fontDescription key="fontDescription" name="AmericanTypewriter-Semibold" family="American Typewriter" pointSize="40"/>
                                 <color key="textColor" red="0.92412227392196655" green="0.087071143090724945" blue="0.13468661904335022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hym-tV-IxG">
-                                <rect key="frame" x="120.5" y="552" width="173" height="47"/>
-                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="30"/>
-                                <state key="normal" title="Push me! 😏">
-                                    <color key="titleColor" red="0.57526975870132446" green="0.059370286762714386" blue="0.090228937566280365" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dzQ-Tq-cSO"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.71652127380754049" blue="0.75383151688566841" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="oOm-Ca-dOo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="AvU-as-OL8"/>
-                            <constraint firstItem="oOm-Ca-dOo" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Hpi-fQ-kKV"/>
-                            <constraint firstItem="oOm-Ca-dOo" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="340" id="M4Q-ST-D36"/>
-                            <constraint firstItem="hym-tV-IxG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Pss-CX-jmd"/>
-                            <constraint firstItem="oOm-Ca-dOo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iF8-Zz-QuQ"/>
-                            <constraint firstItem="oOm-Ca-dOo" firstAttribute="top" secondItem="pDw-pz-17g" secondAttribute="bottom" constant="40" id="uFY-fT-JAa"/>
-                            <constraint firstItem="pDw-pz-17g" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="v7G-8b-SZq"/>
-                            <constraint firstItem="hym-tV-IxG" firstAttribute="top" secondItem="oOm-Ca-dOo" secondAttribute="bottom" constant="40" id="wTw-Df-fU2"/>
+                            <constraint firstItem="Q9D-Ot-JZq" firstAttribute="top" secondItem="oOm-Ca-dOo" secondAttribute="bottom" constant="30" id="IC3-AN-f4N"/>
+                            <constraint firstItem="oOm-Ca-dOo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PrS-HI-hyz"/>
+                            <constraint firstItem="Q9D-Ot-JZq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VWW-rE-9mY"/>
+                            <constraint firstItem="oOm-Ca-dOo" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="b98-uK-6mZ"/>
+                            <constraint firstItem="pDw-pz-17g" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iOE-aj-3Nk"/>
+                            <constraint firstItem="oOm-Ca-dOo" firstAttribute="top" secondItem="pDw-pz-17g" secondAttribute="bottom" constant="30" id="xFM-iw-E6u"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="buttonPush" destination="hym-tV-IxG" id="k0l-g1-nKA"/>
                         <outlet property="imageViewDiamond" destination="oOm-Ca-dOo" id="EfM-Wf-8ow"/>
                         <outlet property="labelTitle" destination="pDw-pz-17g" id="2Gz-0h-geb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="100.00000000000001" y="20.758928571428569"/>
+            <point key="canvasLocation" x="100" y="20.239880059970016"/>
         </scene>
     </scenes>
     <resources>
