@@ -18,15 +18,20 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         view.backgroundColor = UIColor(red:0.97, green:0.36, blue:0.30, alpha:1.0)
-        
     }
 
     @IBAction func buttonPressed(_ sender: UIButton) {
         let controller = UIAlertController(title: "I am rich", message: "I am RICH,\nI deserve it,\nI am good,\n healthy and successful", preferredStyle: .alert) //o usar triple comilla """ """
         let action = UIAlertAction(title: "Aceptar", style: .default) { (action) in
             print("Pulsé el botón de Aceptar")
-            self.imageViewDiamond.image = UIImage(named: "diamante")
-            self.view.backgroundColor = UIColor.white
+            if self.imageViewDiamond.image == UIImage(named: "ruby"){
+                self.imageViewDiamond.image = UIImage(named: "diamante")
+                self.view.backgroundColor = UIColor.white
+            }else{
+                self.imageViewDiamond.image = UIImage(named: "ruby")
+                self.view.backgroundColor = UIColor(red:0.97, green:0.36, blue:0.30, alpha:1.0)
+            }
+            
         }
         controller.addAction(action)
         
