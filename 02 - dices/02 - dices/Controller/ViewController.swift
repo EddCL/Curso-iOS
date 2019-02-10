@@ -70,6 +70,6 @@ class ViewController: UIViewController {
             generateRandomDices()
         }
     }
-    
+    //Proyecto finalizado
 }
 
