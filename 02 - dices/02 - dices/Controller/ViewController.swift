@@ -40,8 +40,35 @@ class ViewController: UIViewController {
         randomDiceIndexLeft = Int(arc4random_uniform(nFaces)) //casteo de uInt32 a Int;
         randomDiceINdexRight = Int(arc4random_uniform(nFaces)) //arc4random_uniform devuelve un entero de 32 bits sin signo
         
-        diceLeft.image = UIImage(named: diceImages[randomDiceIndexLeft])
-        diceRight.image = UIImage(named: diceImages[randomDiceINdexRight])
+        //Agregamos una animación
+        UIView.animate(withDuration: 0.4, delay: 0, options: UIView.AnimationOptions.curveEaseIn, animations: {
+            self.diceLeft.transform = CGAffineTransform(rotationAngle: CGFloat.pi).concatenating(CGAffineTransform(translationX: 150, y: -200)).concatenating(CGAffineTransform(scaleX: 0.5, y: 0.5))
+            self.diceRight.transform = CGAffineTransform(rotationAngle: CGFloat.pi).concatenating(CGAffineTransform(translationX: -150, y: -200)).concatenating(CGAffineTransform(scaleX: 0.5, y: 0.5))
+            
+            self.diceLeft.alpha = 0.0
+            self.diceRight.alpha = 0.0
+            
+        }) { (completed) in
+            self.diceLeft.transform = CGAffineTransform.identity
+            self.diceRight.transform = CGAffineTransform.identity
+            
+            self.diceLeft.alpha = 1.0
+            self.diceRight.alpha = 1.0
+            
+            self.diceLeft.image = UIImage(named: self.diceImages[self.randomDiceIndexLeft])
+            self.diceRight.image = UIImage(named: self.diceImages[self.randomDiceINdexRight])
+        }
+    }
+    
+    //Para poder hacer uso del motionShake
+    override func becomeFirstResponder() -> Bool {
+        return true
+    }
+    
+    override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
+        if motion == .motionShake{
+            generateRandomDices()
+        }
     }
     
 }
