@@ -15,7 +15,15 @@ class ViewController: UIViewController {
     
     var randomDiceIndexLeft: Int = 0
     var randomDiceINdexRight: Int = 0
-    let diceImages: [String] = ["uno", "dos", "tres", "cuatro", "cinco", "seis"]
+    let diceImages: [String]
+    let nFaces : UInt32 //aquí es un elemento GLOBAL
+    
+    required init?(coder aDecoder: NSCoder) { //inicializa las variables que no se han inicializado antes (no tienen valor declarado)
+        diceImages = ["uno", "dos", "tres", "cuatro", "cinco", "seis"]
+        nFaces = UInt32(diceImages.count) //le ponemos un inicializador porque no podemos asignarle valor arriba
+        
+        super.init(coder: aDecoder)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,7 +35,7 @@ class ViewController: UIViewController {
     }
     
     func generateRandomDices(){
-        let nFaces: UInt32 = UInt32(diceImages.count) //para asegurar que no crashee la app por si llegaramos a cambiar el numero de elementos de nuestro arreglo diceImages
+        // usamos: let nFaces: UInt32 = UInt32(diceImages.count) para que sea una variable LOCAL //para asegurar que no crashee la app por si llegaramos a cambiar el numero de elementos de nuestro arreglo diceImages
         
         randomDiceIndexLeft = Int(arc4random_uniform(nFaces)) //casteo de uInt32 a Int;
         randomDiceINdexRight = Int(arc4random_uniform(nFaces)) //arc4random_uniform devuelve un entero de 32 bits sin signo
