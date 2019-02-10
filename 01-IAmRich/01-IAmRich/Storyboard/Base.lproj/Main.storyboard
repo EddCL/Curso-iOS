@@ -28,7 +28,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q9D-Ot-JZq">
                                 <rect key="frame" x="120.5" y="578" width="173" height="47"/>
                                 <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="30"/>
-                                <state key="normal" title="Push me! 😏">
+                                <state key="normal" title="Push me! 💎">
                                     <color key="titleColor" red="0.57526975869999997" green="0.059370286760000002" blue="0.090228937570000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
