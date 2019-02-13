@@ -41,11 +41,10 @@ class FirstViewController: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func validateData(_ sender: UIButton) {
-        if userName == "Juan Gabriel"{
+        let shouldEnterTheParty = (userName == "Juan Gabriel") || (userAge >= 18)
+        
+        if shouldEnterTheParty{
             print("Puedes entrar por ser JB :v")
-            self.view.backgroundColor = .green
-        }else if userAge >= 18 {
-            print("Puedes entrar por ser mayor :B")
             self.view.backgroundColor = .green
         }else{
             print("No puedes entrar :(")
