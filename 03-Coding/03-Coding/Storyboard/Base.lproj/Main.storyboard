@@ -30,7 +30,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ATV-1n-NdE">
                                 <rect key="frame" x="20" y="90" width="374" height="30"/>
                                 <subviews>
-                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="18" minValue="5" maxValue="80" translatesAutoresizingMaskIntoConstraints="NO" id="DEd-dX-6RB">
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="20" minValue="5" maxValue="80" translatesAutoresizingMaskIntoConstraints="NO" id="DEd-dX-6RB">
                                         <rect key="frame" x="-2" y="0.0" width="340" height="31"/>
                                         <color key="minimumTrackTintColor" red="0.54530407820798266" green="0.59314281088082899" blue="0.56904061222958369" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="maximumTrackTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -47,6 +47,14 @@
                                     </label>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cfY-9w-rgr">
+                                <rect key="frame" x="25" y="140" width="364" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Validar tus datos"/>
+                                <connections>
+                                    <action selector="validateData:" destination="9pv-A4-QxB" eventType="touchUpInside" id="UgQ-0f-c0a"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.82364531347788672" green="0.82364531347788672" blue="0.82364531347788672" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -54,8 +62,12 @@
                             <constraint firstItem="ATV-1n-NdE" firstAttribute="top" secondItem="Idk-qT-mEd" secondAttribute="bottom" constant="30" id="OmC-Ru-FKg"/>
                             <constraint firstItem="Idk-qT-mEd" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" constant="10" id="Qtg-2h-dts"/>
                             <constraint firstItem="ATV-1n-NdE" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="bzk-2v-Bh2"/>
+                            <constraint firstItem="cfY-9w-rgr" firstAttribute="top" secondItem="ATV-1n-NdE" secondAttribute="bottom" constant="20" id="cO6-JK-bDT"/>
+                            <constraint firstItem="cfY-9w-rgr" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="25" id="gQC-WO-bbZ"/>
+                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="cfY-9w-rgr" secondAttribute="trailing" constant="25" id="kcx-cb-6jd"/>
                             <constraint firstItem="Idk-qT-mEd" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="20" id="lxv-Tm-pMH"/>
                             <constraint firstItem="ATV-1n-NdE" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="20" id="m0K-Jy-Abp"/>
+                            <constraint firstItem="cfY-9w-rgr" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="mLc-1A-40f"/>
                             <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="ATV-1n-NdE" secondAttribute="trailing" constant="20" id="oSG-bC-cUK"/>
                             <constraint firstItem="Idk-qT-mEd" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="q6S-Ko-V83"/>
                         </constraints>
@@ -64,6 +76,7 @@
                     <tabBarItem key="tabBarItem" title="First" image="first" id="acW-dT-cKf"/>
                     <connections>
                         <outlet property="labelAge" destination="3lf-1d-5Vn" id="jCk-qW-Xx1"/>
+                        <outlet property="sliderAge" destination="DEd-dX-6RB" id="ieC-oN-0Yr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
