@@ -44,7 +44,11 @@ class FirstViewController: UIViewController, UITextFieldDelegate {
         let shouldEnterTheParty = (userName == "Juan Gabriel") || (userAge >= 18)
         
         if shouldEnterTheParty{
-            print("Puedes entrar por ser JB :v")
+            if userName != "Juan Gabriel"{
+                print("Puedes entrar por ser mayor de edad :v")
+            }else{
+                print("Puedes entrar por ser JB :v")
+            }
             self.view.backgroundColor = .green
         }else{
             print("No puedes entrar :(")

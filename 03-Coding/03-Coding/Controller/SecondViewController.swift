@@ -9,10 +9,19 @@
 import UIKit
 
 class SecondViewController: UIViewController {
+    
+    var fibonacci : [Int] = [0,1]
+    
+    var fibonacciID = 1
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    func generateFibonacciNumbers(){
+        if fibonacciID <= 1 || fibonacciID > 100{
+            return
+        }
     }
 
 
