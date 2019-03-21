@@ -26,6 +26,17 @@ class ThirdViewController: UIViewController, UITableViewDelegate, UITableViewDat
         print(fonts)
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showFontsForFamily" {
+            let navController = segue.destination as! UINavigationController //porque en sí va a un navigation controller y luego a la primera vista de este (topViewController)
+            let destinationViewController = navController.topViewController as! FontDetailViewController
+            let idx = self.tableView.indexPathForSelectedRow!.row
+            
+            destinationViewController.familyName = self.families[idx]
+            destinationViewController.fonts = self.fonts[self.families[idx]]!
+        }
+    }
+    
     //MARK: Métodos del protocolo UITableViewDataSource
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -55,9 +66,8 @@ class ThirdViewController: UIViewController, UITableViewDelegate, UITableViewDat
         let familyFonts = fonts[fontFamily]!
         print(fontFamily)
         print(familyFonts)
-        
-        
-        
     }
+    
+    
 
 }
