@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6D33338B22431E6700171AE4 /* FontDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D33338A22431E6700171AE4 /* FontDetailViewController.swift */; };
 		6D8630FD221216D500432654 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D8630FC221216D500432654 /* AppDelegate.swift */; };
 		6D8630FF221216D500432654 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D8630FE221216D500432654 /* FirstViewController.swift */; };
 		6D863101221216D500432654 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D863100221216D500432654 /* SecondViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6D33338A22431E6700171AE4 /* FontDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontDetailViewController.swift; sourceTree = "<group>"; };
 		6D8630F9221216D500432654 /* 03-Coding.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "03-Coding.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D8630FC221216D500432654 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6D8630FE221216D500432654 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 		6D86311222121EB100432654 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				6D33338A22431E6700171AE4 /* FontDetailViewController.swift */,
 				6D8630FC221216D500432654 /* AppDelegate.swift */,
 				6D8630FE221216D500432654 /* FirstViewController.swift */,
 				6D863100221216D500432654 /* SecondViewController.swift */,
@@ -157,6 +160,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D33338B22431E6700171AE4 /* FontDetailViewController.swift in Sources */,
 				6D863101221216D500432654 /* SecondViewController.swift in Sources */,
 				6D8630FD221216D500432654 /* AppDelegate.swift in Sources */,
 				6D86311122121EA800432654 /* ThirdViewController.swift in Sources */,

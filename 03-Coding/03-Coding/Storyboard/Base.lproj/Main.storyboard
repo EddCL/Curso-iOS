@@ -208,6 +208,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="Yzv-oB-8yY" kind="show" identifier="showFontsForFamily" id="zTs-f9-1PB"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -232,7 +235,66 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NuF-vO-Wcz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="0.0" y="698.64130434782612"/>
+            <point key="canvasLocation" x="0.0" y="868"/>
+        </scene>
+        <!--Detalle de la fuente-->
+        <scene sceneID="hax-Tv-GcD">
+            <objects>
+                <viewController id="naq-GY-byx" customClass="FontDetailViewController" customModule="_3_Coding" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="K3j-or-uaZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Font title here" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FYd-S3-w74">
+                                <rect key="frame" x="20" y="84" width="374" height="29.333333333333329"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SD0-TF-RR2">
+                                <rect key="frame" x="0.0" y="133.33333333333334" width="414" height="216.00000000000003"/>
+                            </pickerView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="B2l-S0-gkb">
+                                <rect key="frame" x="20" y="369.33333333333331" width="374" height="249.99999999999994"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="oFf-f5-37K"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="7l5-bP-9Ti" firstAttribute="trailing" secondItem="FYd-S3-w74" secondAttribute="trailing" constant="20" id="Enh-37-sDF"/>
+                            <constraint firstItem="B2l-S0-gkb" firstAttribute="leading" secondItem="7l5-bP-9Ti" secondAttribute="leading" constant="20" id="Pxu-cj-hBV"/>
+                            <constraint firstItem="B2l-S0-gkb" firstAttribute="top" secondItem="SD0-TF-RR2" secondAttribute="bottom" constant="20" id="SvP-2R-G0Y"/>
+                            <constraint firstItem="7l5-bP-9Ti" firstAttribute="trailing" secondItem="B2l-S0-gkb" secondAttribute="trailing" constant="20" id="W7q-zS-jT7"/>
+                            <constraint firstItem="SD0-TF-RR2" firstAttribute="leading" secondItem="7l5-bP-9Ti" secondAttribute="leading" id="itZ-x8-PSt"/>
+                            <constraint firstItem="FYd-S3-w74" firstAttribute="leading" secondItem="7l5-bP-9Ti" secondAttribute="leading" constant="20" id="lf3-8O-AXj"/>
+                            <constraint firstItem="SD0-TF-RR2" firstAttribute="top" secondItem="FYd-S3-w74" secondAttribute="bottom" constant="20" id="ojT-KG-Qms"/>
+                            <constraint firstItem="SD0-TF-RR2" firstAttribute="trailing" secondItem="7l5-bP-9Ti" secondAttribute="trailing" id="q0b-aE-mBx"/>
+                            <constraint firstItem="FYd-S3-w74" firstAttribute="top" secondItem="7l5-bP-9Ti" secondAttribute="top" constant="20" id="ttB-nf-M0S"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="7l5-bP-9Ti"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Detalle de la fuente" id="QyL-6h-XUW">
+                        <barButtonItem key="leftBarButtonItem" systemItem="done" id="vew-b8-b2b">
+                            <connections>
+                                <action selector="doneButtonPressed:" destination="naq-GY-byx" id="TtP-fp-UuG"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="labelTitle" destination="FYd-S3-w74" id="WtF-wp-T0z"/>
+                        <outlet property="pickerFonts" destination="SD0-TF-RR2" id="r4l-RZ-oxY"/>
+                        <outlet property="textView" destination="B2l-S0-gkb" id="NnW-Kn-bkp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gDR-5s-bEp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1504" y="868"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -252,6 +314,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="0.0" y="0.0"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="t4R-39-Zuc">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Yzv-oB-8yY" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="sJR-y6-zdR">
+                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="naq-GY-byx" kind="relationship" relationship="rootViewController" id="itc-YW-szF"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qyg-qM-wYs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="737.68115942028987" y="868.20652173913049"/>
         </scene>
     </scenes>
     <resources>

@@ -18,9 +18,9 @@ class ThirdViewController: UIViewController, UITableViewDelegate, UITableViewDat
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        families = UIFont.familyNames
+        families = UIFont.familyNames.sorted(by: {return $0 < $1})
         
-        for fam in families{
+        for fam in families {
             fonts[fam] = UIFont.fontNames(forFamilyName: fam)
         }
         print(fonts)
@@ -38,10 +38,26 @@ class ThirdViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "FontFamilyCell", for: indexPath)
+        let fontFamily = self.families[indexPath.row]
         
-        cell.textLabel?.text = families[indexPath.row]
+        cell.textLabel?.text = fontFamily
+        cell.textLabel?.font = UIFont(name: fontFamily, size: 20.0)
         
         return cell
+    }
+    
+    //MARK: Métodos del protocolo UITableViewDelegate
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let row = indexPath.row
+        let fontFamily = families[row]
+        
+        let familyFonts = fonts[fontFamily]!
+        print(fontFamily)
+        print(familyFonts)
+        
+        
+        
     }
 
 }
