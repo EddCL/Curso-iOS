@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--First-->
+        <!--Fiesta-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
                 <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModule="_3_Coding" customModuleProvider="target" sceneMemberID="viewController">
@@ -48,7 +48,7 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cfY-9w-rgr">
-                                <rect key="frame" x="25" y="140" width="364" height="36"/>
+                                <rect key="frame" x="135" y="140" width="144" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Validar tus datos"/>
                                 <connections>
@@ -58,22 +58,19 @@
                         </subviews>
                         <color key="backgroundColor" red="0.82364531347788672" green="0.82364531347788672" blue="0.82364531347788672" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="Idk-qT-mEd" secondAttribute="trailing" constant="20" id="LCf-co-gWR"/>
-                            <constraint firstItem="ATV-1n-NdE" firstAttribute="top" secondItem="Idk-qT-mEd" secondAttribute="bottom" constant="30" id="OmC-Ru-FKg"/>
-                            <constraint firstItem="Idk-qT-mEd" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" constant="10" id="Qtg-2h-dts"/>
+                            <constraint firstItem="Idk-qT-mEd" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="20" id="2cD-A0-3gu"/>
+                            <constraint firstItem="ATV-1n-NdE" firstAttribute="top" secondItem="Idk-qT-mEd" secondAttribute="bottom" constant="30" id="NOY-OJ-rwa"/>
+                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="Idk-qT-mEd" secondAttribute="trailing" constant="20" id="X48-jW-6Ae"/>
                             <constraint firstItem="ATV-1n-NdE" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="bzk-2v-Bh2"/>
                             <constraint firstItem="cfY-9w-rgr" firstAttribute="top" secondItem="ATV-1n-NdE" secondAttribute="bottom" constant="20" id="cO6-JK-bDT"/>
-                            <constraint firstItem="cfY-9w-rgr" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="25" id="gQC-WO-bbZ"/>
-                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="cfY-9w-rgr" secondAttribute="trailing" constant="25" id="kcx-cb-6jd"/>
-                            <constraint firstItem="Idk-qT-mEd" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="20" id="lxv-Tm-pMH"/>
                             <constraint firstItem="ATV-1n-NdE" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="20" id="m0K-Jy-Abp"/>
                             <constraint firstItem="cfY-9w-rgr" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="mLc-1A-40f"/>
                             <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="ATV-1n-NdE" secondAttribute="trailing" constant="20" id="oSG-bC-cUK"/>
-                            <constraint firstItem="Idk-qT-mEd" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="q6S-Ko-V83"/>
+                            <constraint firstItem="Idk-qT-mEd" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" constant="10" id="swv-q5-GZT"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="First" image="first" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="Fiesta" image="first" id="acW-dT-cKf"/>
                     <connections>
                         <outlet property="labelAge" destination="3lf-1d-5Vn" id="jCk-qW-Xx1"/>
                         <outlet property="sliderAge" destination="DEd-dX-6RB" id="ieC-oN-0Yr"/>
@@ -83,7 +80,7 @@
             </objects>
             <point key="canvasLocation" x="747.82608695652175" y="-461.41304347826093"/>
         </scene>
-        <!--Second-->
+        <!--Fibonacci-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
                 <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="_3_Coding" customModuleProvider="target" sceneMemberID="viewController">
@@ -168,7 +165,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Second" image="second" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="Fibonacci" image="second" id="cPa-gy-q4n"/>
                     <connections>
                         <outlet property="labelGoldNum" destination="ynh-Vv-Xm5" id="TmF-nL-74m"/>
                         <outlet property="labelNumber" destination="NYv-MC-Fnd" id="8s6-JL-ZKv"/>
@@ -180,7 +177,7 @@
             </objects>
             <point key="canvasLocation" x="747.82608695652175" y="198.91304347826087"/>
         </scene>
-        <!--third-->
+        <!--Fuentes-->
         <scene sceneID="Gbd-bh-IMu">
             <objects>
                 <viewController id="EUb-Uh-b8D" customClass="ThirdViewController" customModule="_3_Coding" customModuleProvider="target" sceneMemberID="viewController">
@@ -228,7 +225,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="pUu-r3-JGZ"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="third" image="first" id="mh4-2k-q7T"/>
+                    <tabBarItem key="tabBarItem" title="Fuentes" image="first" id="mh4-2k-q7T"/>
                     <connections>
                         <outlet property="tableView" destination="qSA-W2-TVJ" id="mEI-vS-8Qb"/>
                     </connections>
