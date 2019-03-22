@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="TPt-2J-3Db">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="1oz-LO-pcG">
+            <objects>
+                <viewController id="TPt-2J-3Db" customClass="ViewController" customModule="T2___El_adivino" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SWR-bW-mhy">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="uranai" translatesAutoresizingMaskIntoConstraints="NO" id="AdY-6A-e57">
+                                <rect key="frame" x="0.0" y="148" width="414" height="440"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="440" id="3nX-Wv-G5Y"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pregunta lo que quieras a Uranai Baba" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c5w-ND-NPw">
+                                <rect key="frame" x="0.0" y="29.999999999999996" width="414" height="41.666666666666657"/>
+                                <fontDescription key="fontDescription" name="SavoyeLetPlain" family="Savoye LET" pointSize="35"/>
+                                <color key="textColor" red="0.82364531350000003" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xE9-C0-aPD">
+                                <rect key="frame" x="152" y="598" width="110" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="110" id="Qtl-x6-qJD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SavoyeLetPlain" family="Savoye LET" pointSize="40"/>
+                                <state key="normal" title="Preguntar">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="askButtonPressed:" destination="TPt-2J-3Db" eventType="touchUpInside" id="RwO-St-6qh"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gSU-ix-vaz">
+                                <rect key="frame" x="127" y="463" width="160" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="160" id="a8F-uZ-MLO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KbW-gI-kbh">
+                                <rect key="frame" x="157" y="494.33333333333326" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="IA2-d6-8yZ"/>
+                                    <constraint firstAttribute="height" constant="100" id="eY5-Qa-sEd"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="c5w-ND-NPw" firstAttribute="top" secondItem="jVO-TD-1dg" secondAttribute="top" constant="10" id="2R4-82-abQ"/>
+                            <constraint firstItem="gSU-ix-vaz" firstAttribute="centerX" secondItem="SWR-bW-mhy" secondAttribute="centerX" id="2mR-JC-X0C"/>
+                            <constraint firstItem="xE9-C0-aPD" firstAttribute="centerX" secondItem="SWR-bW-mhy" secondAttribute="centerX" id="3V6-id-6oX"/>
+                            <constraint firstItem="AdY-6A-e57" firstAttribute="centerX" secondItem="SWR-bW-mhy" secondAttribute="centerX" id="Akd-rP-NLH"/>
+                            <constraint firstItem="jVO-TD-1dg" firstAttribute="trailing" secondItem="c5w-ND-NPw" secondAttribute="trailing" id="ArG-rn-Qo4"/>
+                            <constraint firstItem="xE9-C0-aPD" firstAttribute="top" secondItem="AdY-6A-e57" secondAttribute="bottom" constant="10" id="Df2-4y-edM"/>
+                            <constraint firstItem="jVO-TD-1dg" firstAttribute="bottom" secondItem="xE9-C0-aPD" secondAttribute="bottom" constant="10" id="H7v-ul-oPe"/>
+                            <constraint firstItem="xE9-C0-aPD" firstAttribute="top" secondItem="gSU-ix-vaz" secondAttribute="bottom" constant="100" id="Roh-yF-rDe"/>
+                            <constraint firstItem="KbW-gI-kbh" firstAttribute="centerX" secondItem="SWR-bW-mhy" secondAttribute="centerX" id="S5a-be-Fjv"/>
+                            <constraint firstItem="gSU-ix-vaz" firstAttribute="top" secondItem="AdY-6A-e57" secondAttribute="bottom" constant="-125" id="Wlh-xr-npm"/>
+                            <constraint firstItem="c5w-ND-NPw" firstAttribute="leading" secondItem="jVO-TD-1dg" secondAttribute="leading" id="XVh-SY-lz2"/>
+                            <constraint firstItem="c5w-ND-NPw" firstAttribute="centerX" secondItem="SWR-bW-mhy" secondAttribute="centerX" id="jEt-mN-ISN"/>
+                            <constraint firstItem="AdY-6A-e57" firstAttribute="centerY" secondItem="SWR-bW-mhy" secondAttribute="centerY" id="uGe-xw-aIM"/>
+                            <constraint firstItem="KbW-gI-kbh" firstAttribute="firstBaseline" secondItem="gSU-ix-vaz" secondAttribute="baseline" id="xGg-JP-n1i"/>
+                            <constraint firstItem="AdY-6A-e57" firstAttribute="leading" secondItem="SWR-bW-mhy" secondAttribute="leading" id="z2Q-v2-Dq0"/>
+                            <constraint firstAttribute="trailing" secondItem="AdY-6A-e57" secondAttribute="trailing" id="zMl-cT-fAk"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="jVO-TD-1dg"/>
+                    </view>
+                    <connections>
+                        <outlet property="answerImage" destination="KbW-gI-kbh" id="wwn-AA-EDJ"/>
+                        <outlet property="uranaiAnswer" destination="gSU-ix-vaz" id="V9W-pu-LAc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="63T-wc-9SQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="90.400000000000006" y="-711.57635467980299"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="uranai" width="666.66668701171875" height="881.33331298828125"/>
+    </resources>
+</document>
