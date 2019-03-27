@@ -316,7 +316,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9K6U5FW696;
-				INFOPLIST_FILE = "05 - QuizApp/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/05 - QuizApp/Supporting files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -334,7 +334,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9K6U5FW696;
-				INFOPLIST_FILE = "05 - QuizApp/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/05 - QuizApp/Supporting files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
