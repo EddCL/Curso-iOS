@@ -11,7 +11,7 @@ import UIKit
 class ViewController: UIViewController {
     
     var randomAnswerNum: Int = 0
-    let uranaiAnswers: [String] = ["...", "Sí", "No", "Puede ser", "No tengo ni idea", "Sin duda alguna", "No lo tengo muy claro", "Jajajajajaja", "¿Realmente quieres saber?", "Claro que no", "Por supuesto que no"]
+    let uranaiAnswers: [String] = ["...", "Sí", "No", "Puede ser", "No tengo ni idea", "Sin duda alguna", "No lo tengo muy claro", "Jajajajajaja", "¿Quieres saber?", "Claro que no", "Por supuesto que no"]
     let uranaiAnswerImages: [String] = ["talVez", "si", "no", "duda", "losiento", "claroQueSi", "loDudo", "risa", "quee", "claroQueNo", "noooo"]
     let numberOfAnswers: UInt32
     
