@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		22E720C0224BFE7900AC969E /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E720BF224BFE7900AC969E /* Question.swift */; };
 		6D19C639224469360036B851 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D19C638224469360036B851 /* AppDelegate.swift */; };
 		6D19C63B224469360036B851 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D19C63A224469360036B851 /* ViewController.swift */; };
 		6D19C63E224469360036B851 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D19C63C224469360036B851 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		22E720BF224BFE7900AC969E /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		6D19C635224469360036B851 /* 05 - QuizApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "05 - QuizApp.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D19C638224469360036B851 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6D19C63A224469360036B851 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -35,6 +37,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		22E720BE224BFE6200AC969E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				22E720BF224BFE7900AC969E /* Question.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		6D19C62C224469360036B851 = {
 			isa = PBXGroup;
 			children = (
@@ -54,19 +64,12 @@
 		6D19C637224469360036B851 /* 05 - QuizApp */ = {
 			isa = PBXGroup;
 			children = (
+				22E720BE224BFE6200AC969E /* Model */,
 				6D19C64C22446D710036B851 /* Controller */,
-				6D19C64A22446D5B0036B851 /* Model */,
 				6D19C64B22446D640036B851 /* View */,
 				6D19C64D22446D7B0036B851 /* Supporting files */,
 			);
 			path = "05 - QuizApp";
-			sourceTree = "<group>";
-		};
-		6D19C64A22446D5B0036B851 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		6D19C64B22446D640036B851 /* View */ = {
@@ -167,6 +170,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22E720C0224BFE7900AC969E /* Question.swift in Sources */,
 				6D19C63B224469360036B851 /* ViewController.swift in Sources */,
 				6D19C639224469360036B851 /* AppDelegate.swift in Sources */,
 			);

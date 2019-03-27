@@ -19,7 +19,14 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
     }
-
+    
+   /* override var preferredStatusBarStyle: UIStatusBarStyle{
+        return UIStatusBarStyle.lightContent   // Por si en infoPlist le ponemos Yes a View controller-based status bar appearance
+    }
+    override var prefersStatusBarHidden: Bool{
+        return true
+    } */
+    
     @IBAction func buttonPressed(_ sender: UIButton) {
         print("\(sender.tag)")
     }
