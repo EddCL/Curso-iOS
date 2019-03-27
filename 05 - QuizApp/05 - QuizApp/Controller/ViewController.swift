@@ -15,9 +15,13 @@ class ViewController: UIViewController {
     @IBOutlet weak var pointsLabel: UILabel!
     @IBOutlet weak var progressBar: UIView!
     
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let factory = QuestionsFactory()
+        let questions = factory.questions
     }
     
    /* override var preferredStatusBarStyle: UIStatusBarStyle{
@@ -26,7 +30,6 @@ class ViewController: UIViewController {
     override var prefersStatusBarHidden: Bool{
         return true
     } */
-    
     @IBAction func buttonPressed(_ sender: UIButton) {
         print("\(sender.tag)")
     }
