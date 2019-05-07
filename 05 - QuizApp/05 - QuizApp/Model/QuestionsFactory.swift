@@ -9,15 +9,8 @@
 import Foundation
 
 class QuestionsFactory {
-    var questions = [Question]()
     
-    func getQuestionAt(index: Int) -> Question? {
-        if index<0 || index>self.questions.count{
-            return nil
-        }else{
-            return self.questions[index]
-        }
-    }
+    var questions = [Question]()
     
     init() {
         self.questions.append(Question(texto: "El Vaticano tiene la cantidad de dinero suficiente para acabar con la pobreza mundial dos veces", correctAnswer: true))
@@ -34,4 +27,16 @@ class QuestionsFactory {
         self.questions.append(Question(texto: "Cervantes y Shakespeare murieron el mismo día", correctAnswer: true))
     }
     
+    func getQuestionAt(index: Int) -> Question? {
+        if index<0 || index>self.questions.count{
+            return nil
+        }else{
+            return self.questions[index]
+        }
+    }
+    
+    func getRandomQuestion()->Question{
+        let index = Int(arc4random_uniform(UInt32(questions.count)))
+        return questions[index]
+    }
 }

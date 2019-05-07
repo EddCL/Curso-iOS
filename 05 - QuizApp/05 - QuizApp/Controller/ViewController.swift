@@ -19,9 +19,6 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let factory = QuestionsFactory()
-        let questions = factory.questions
     }
     
    /* override var preferredStatusBarStyle: UIStatusBarStyle{
@@ -32,6 +29,9 @@ class ViewController: UIViewController {
     } */
     @IBAction func buttonPressed(_ sender: UIButton) {
         print("\(sender.tag)")
+        let factory = QuestionsFactory()
+        let questions = factory.getRandomQuestion()
+        print(questions.questionText)
     }
     
 }
